@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import List from './List.jsx'
 
 export default class App extends Component {
   constructor(props) {
@@ -27,6 +28,7 @@ export default class App extends Component {
             <input type="text" name="last" onChange={this.handleChange} />
           </label>
         </form>
+        <List />
       </div>
     )
   }
