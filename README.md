@@ -26,3 +26,8 @@ npm start
 ## Exercise 4: Refactoring a Functional Component to a Stateful Component
 
 * Refactor your functional component into a stateful class component
+
+## Exercise 5: Using Form Inputs to Update State
+
+* Inside of App.jsx, create an form
+* Build out some functionality that will allow you to set your first name and last name to the state object
