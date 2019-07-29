@@ -22,3 +22,7 @@ npm start
 ## Exercise 3: Passing Props into A Functional Component
 
 * Pass your first and last name down as props to your component from index.jsx
+
+## Exercise 4: Refactoring a Functional Component to a Stateful Component
+
+* Refactor your functional component into a stateful class component
