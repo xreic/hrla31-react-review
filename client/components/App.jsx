@@ -18,7 +18,10 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <form>
+        {(this.props.first === this.state.first && this.props.last === this.state.last) ? (
+          <List />
+        ) : (
+          <form>
           <label>
             First Name:
             <input type="text" name="first" onChange={this.handleChange} />
@@ -28,7 +31,7 @@ export default class App extends Component {
             <input type="text" name="last" onChange={this.handleChange} />
           </label>
         </form>
-        <List />
+        )}
       </div>
     )
   }
