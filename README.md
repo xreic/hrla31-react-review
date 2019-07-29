@@ -43,3 +43,8 @@ npm start
 * Build out some functionality that will make the input required when submitted 
 * Build out some functionality that will reset the field of the input after submitted
 
+## Exercise 7: Mapping Elements
+
+* Inside the components folder, build out a stateful react component called ListEntry
+* Import this ListEntry component into List
+* Build out some functionality that render the elements stored in the todos array to the DOM
