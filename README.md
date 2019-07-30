@@ -27,9 +27,9 @@ npm start
 
 * Refactor your functional component into a stateful class component
 
-## Exercise 5: Using Form Inputs to Update State
+## Exercise 5: Using Inputs to Update State
 
-* Inside of App.jsx, create an form
+* Inside of App.jsx, create two inputs
 * Build out some functionality that will allow you to set your first name and last name to the state object
 
 ## Exercise 6: Starting our Todo List Component
@@ -48,3 +48,12 @@ npm start
 * Inside the components folder, build out a stateful react component called ListEntry
 * Import this ListEntry component into List
 * Build out some functionality that render the elements stored in the todos array to the DOM
+
+## Exercise 8: Conditional Rendering
+
+* Inside of App, build out some functionality that will only display List if the first and name entered there match your own
+
+## [EXTRA] Exercise 9: CRUD Operations
+
+* Build out some functionality that allows your todo list to have all CRUD functionality
+* CRUD (create, read, update, delete)
