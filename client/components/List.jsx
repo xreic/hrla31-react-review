@@ -11,6 +11,8 @@ export default class List extends Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleEdit = this.handleEdit.bind(this);
+    this.handleDelete = this.handleDelete.bind(this);
   }
 
   handleChange(e) {
@@ -22,8 +24,20 @@ export default class List extends Component {
     this.setState({
       todos: [...this.state.todos, this.state.todo],
       todo: ""
-    }, () => console.log(this.state));
+    });
     document.getElementById("form").reset();
+  }
+
+  handleEdit(index, newTodo) {
+    let copyOfState = [...this.state.todos];
+    copyOfState[index] = newTodo
+    this.setState({ todos: copyOfState });
+  }
+
+  handleDelete(index) {
+    let copyOfState = [...this.state.todos];
+    copyOfState.splice(index, 1);
+    this.setState({ todos: copyOfState });
   }
 
   render() {
@@ -36,7 +50,7 @@ export default class List extends Component {
           </label>
           <input type="submit" value="Submit" />
         </form>
-        {this.state.todos.map((todo, index) => <ListEntry todo={todo} key={index}/>)}
+        {this.state.todos.map((todo, index) => <ListEntry todo={todo} key={index} index={index} handleEdit={this.handleEdit} handleDelete={this.handleDelete}/>)}
       </div>
     )
   }

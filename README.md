@@ -52,3 +52,8 @@ npm start
 ## Exercise 8: Conditional Rendering
 
 * Inside of App, build out some functionality that will only display List if the first and name entered there match your own
+
+## [EXTRA] Exercise 9: CRUD Operations
+
+* Build out some functionality that allows your todo list to have all CRUD functionality
+* CRUD (create, read, update, delete)
